@@ -39,11 +39,13 @@ formDelPelis.addEventListener('submit', function (e) {
         console.log("La película no existe o no has introducido un valor válido");
     }*/
 
-
+    // borra la pelicula de la lista si coincide con el valor de la key
     for ( var i = 0, len = localStorage.length; i < len; ++i ) {
-        if( localStorage.getItem( localStorage.key( i ) ) == title){
+        if( title.length >= 1 && (localStorage.getItem( localStorage.key( i ) ) == title)){
             localStorage.removeItem(localStorage.key( i ));
             return false; //Corta la ejecución del for
+        }else{
+            console.log("La película no existe o no has introducido un valor válido");
         }
     };
 
