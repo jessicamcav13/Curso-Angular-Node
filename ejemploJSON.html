@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo JSON</title>
-    <script type="javascript" src="ejemploJSON.js"></script>
 
-    <script type="text/javascript">
-
-
-    </script>
 </head>
 <body>
-    <h1>JSON</h1>
+    <h1>Añade tu película</h1>
+    <form action="" id="formpeliculas">
+        <input type="text" id="addpelicula"/>
+        <button type="buttom">Guardar</button>
+    </form>
+
+    <h1>Borra tu película</h1>
+    <form action="" id="formDelpeliculas">
+        <input type="text" id="delpelicula"/>
+        <button type="submit">Borrar</button>
+    </form>
+
+    <div id="peliculas">
+        <h2>Peliculas</h2>
+        <ul id="peliculasList">
+
+        </ul>
+    </div>
+    <!--<script type="text/javascript" src="ejemploJSON.js"></script>-->
+    <!--<script type="text/javascript" src="localStorage.js"></script>-->
+    <script type="text/javascript" src="ejercicioLocalStorage.js"></script>
 </body>
 </html>
